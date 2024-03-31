@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chat_application.CreateRoomController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-min-height: 1000; -fx-background-color: #E5E4E2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="105.0" layoutY="219.0" prefHeight="358.0" prefWidth="390.0" style="-fx-padding: 10; -fx-background-color: white;">
+         <children>
+            <Label layoutX="115.0" layoutY="35.0" text="CREATE ROOM">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="room_name" layoutX="58.0" layoutY="102.0" prefHeight="38.0" prefWidth="274.0" promptText="Enter room name" style="-fx-min-height: 38;" />
+            <TextField fx:id="user2" layoutX="58.0" layoutY="168.0" prefHeight="25.0" prefWidth="274.0" promptText="Add a member" style="-fx-min-height: 38;" />
+<!--            <TextField layoutX="25.0" layoutY="135.0" promptText="Set room Code"  />-->
+            <Button layoutX="221.0" layoutY="243.0" mnemonicParsing="false" onAction="#onCreation" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: black;" text="Create Room" textFill="#fff8f8">
+                  <font>
+                     <Font size="15.0" />
+                  </font></Button>
+               <Button layoutX="100.0" layoutY="243.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="35.0" prefWidth="108.0" style="-fx-background-color: #DBD7D2;" text="Cancel">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Button>
+               <Label layoutX="58.0" layoutY="85.0" prefHeight="17.0" prefWidth="274.0" textFill="RED" fx:id="already2" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
+</VBox>

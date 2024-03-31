@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chat_application.HelloController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button layoutX="150.0" layoutY="280.0" mnemonicParsing="false" onAction="#onHelloButtonClick" style="-fx-background-color: black; -fx-min-width: 300; -fx-min-height: 43;" text="Login" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="username" layoutX="150.0" layoutY="128.0" promptText="Enter username" style="-fx-min-height: 43; -fx-min-width: 300;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="password" layoutX="150.0" layoutY="200.0" promptText="Enter Password" style="-fx-min-width: 300; -fx-min-height: 43;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Label layoutX="263.0" layoutY="63.0" text="LOGIN">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+         <Hyperlink layoutX="248.0" layoutY="335.0" onAction="#SignUp" text="New User?SignUp" />
+         <Label fx:id="invalid" layoutX="150.0" layoutY="111.0" prefHeight="17.0" prefWidth="300.0" textFill="RED" />
+   </children>
+</Pane>
+</VBox>

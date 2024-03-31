@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-min-height: 700; -fx-min-width: 700; -fx-background-color: #E5E4E2;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chat_application.CreateRoomController">
+   <children>
+      <Button layoutX="291.0" layoutY="405.0" mnemonicParsing="false" onAction="#onJoin" prefHeight="35.0" prefWidth="82.0" style="-fx-min-height: 35; -fx-background-color: grey;" text="cancel ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Pane layoutX="179.0" layoutY="177.0" prefHeight="298.0" prefWidth="341.0" style="-fx-padding: 20; -fx-background-color: white;">
+         <children>
+            <Label layoutX="81.0" layoutY="14.0" style="-fx-background-color: white;" text="Join Room to Chat">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+            <TextField layoutX="28.0" layoutY="80.0" prefHeight="40.0" prefWidth="285.0" promptText="Enter Room Name" style="-fx-min-height: 40; -fx-min-width: 250;" />
+            <TextField fx:id="room_name" layoutX="28.0" layoutY="149.0" prefHeight="40.0" prefWidth="285.0" promptText="Enter RoomCode" style="-fx-min-width: 250; -fx-min-height: 40;" />
+            <Button layoutX="232.0" layoutY="235.0" mnemonicParsing="false" onAction="#onJoin" style="-fx-min-height: 35; -fx-background-color: black;" text="Join room" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="130.0" layoutY="235.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="35.0" prefWidth="82.0" style="-fx-min-height: 35; -fx-background-color: gray;" text="cancel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="28.0" layoutY="200.0" prefHeight="7.0" prefWidth="285.0" text="Hint: room code will be the combination of two users" />
+            <Label fx:id="already"  layoutX="28.0" layoutY="63.0" prefHeight="17.0" prefWidth="285.0" textFill="RED" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chat_application.SignUpController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21">
+   <children>
+      <Label layoutX="248.0" layoutY="26.0" text="SIGNUP" >
+            <font>
+               <Font size="24.0" />
+            </font></Label>
+      <TextField fx:id="name" layoutX="135.0" layoutY="85.0" promptText="Enter your name" style="-fx-min-height: 40; -fx-min-width: 310;" />
+      <TextField fx:id="email" layoutX="135.0" layoutY="190.0" promptText="Enter your Email id" style="-fx-min-height: 38; -fx-min-width: 310;" />
+      <PasswordField fx:id="password" layoutX="135.0" layoutY="246.0" promptText="Enter password" style="-fx-min-height: 38; -fx-min-width: 310;" />
+      <Button layoutX="135.0" layoutY="302.0" mnemonicParsing="false" onAction="#SignUpButtonClicked" style="-fx-min-height: 35; -fx-min-width: 310; -fx-background-color: black;" text="SignIn" textFill="WHITE">
+            <font>
+               <Font size="15.0" />
+            </font></Button>
+         <TextField fx:id="first" layoutX="135.0" layoutY="137.0" promptText="enter first name" style="-fx-min-height: 38; -fx-min-width: 100;" />
+         <TextField fx:id="last" layoutX="298.0" layoutY="137.0" promptText="enter last Name" style="-fx-min-width: 100; -fx-min-height: 38;" />
+         <Hyperlink layoutX="207.0" layoutY="344.0" onAction="#onHyper" text="Already have a account?Login" />
+         <Label layoutX="135.0" layoutY="66.0" prefHeight="18.0" prefWidth="310.0" textFill="RED" fx:id="already" />
+   </children>
+</AnchorPane>
+</VBox>
